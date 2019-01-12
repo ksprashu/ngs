@@ -1,9 +1,9 @@
-const theOneFunc = () => {};
-
-setTimeout(theOneFunc, 4 * 1000);
+const theOneFunc = (val) => {console.log("Hello after " + val + " seconds")};
 
 // Hello after 4 seconds
+setTimeout(theOneFunc, 4 * 1000, 4);
 
 // Hello after 8 seconds
+setTimeout(theOneFunc, 8 * 1000, 8);
 
 // You can define only ONE function
